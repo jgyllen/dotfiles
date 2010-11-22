@@ -12,8 +12,8 @@
 	autocrlf = input
 	editor = mate -w
 
-[diff]
-	external = ~/bin/git-diff-wrapper.sh
+#[diff]
+#	external = ~/bin/git-diff-wrapper.sh
 
 [github]
 	user = jgyllen
