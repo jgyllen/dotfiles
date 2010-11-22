@@ -1,0 +1,26 @@
+[alias]
+	ci = commit
+	co = checkout
+
+[branch]
+	autosetupmerge = true
+
+[color]
+	ui = auto
+
+[core]
+	autocrlf = input
+	editor = mate -w
+
+[diff]
+	external = ~/bin/git-diff-wrapper.sh
+
+[github]
+	user = jgyllen
+
+[help]
+	browser = open
+	
+[user]
+	email = jacob@cookiejunkie.com
+	name = Jacob Gyllenstierna
