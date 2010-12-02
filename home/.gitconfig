@@ -1,6 +1,7 @@
 [alias]
 	ci = commit
 	co = checkout
+	st = status
 
 [branch]
 	autosetupmerge = true

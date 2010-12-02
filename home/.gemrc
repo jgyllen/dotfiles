@@ -1,5 +1,6 @@
 --- 
-gem: --no-rdoc --no-ri
+install: --no-rdoc --no-ri
+update: --no-rdoc --no-ri
 rdoc: --inline-source --line-numbers
 :backtrace: false
 :benchmark: false
