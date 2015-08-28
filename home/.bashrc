@@ -1,9 +1,10 @@
 # Basics
-export EDITOR='mate -w'
+export EDITOR='subl -w'
+export GREP_OPTIONS='--color=always'
 export PATH=/usr/local/bin:$PATH:$HOME/bin
 
 # Homebrew
-export PATH=$PATH:/usr/local/sbin
+export PATH="/usr/local/sbin:$PATH"
 source `brew --prefix`/Library/Contributions/brew_bash_completion.sh
 
 # Git
@@ -23,4 +24,15 @@ if [ -e ~/.bashrc_private ]
 fi
 
 # RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# NVM
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
+# lunchy
+LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
+if [ -f $LUNCHY_DIR/lunchy-completion.bash ]; then
+  . $LUNCHY_DIR/lunchy-completion.bash
+fi

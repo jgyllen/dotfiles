@@ -1,4 +1,11 @@
-.bundle
+/.bundle
+/.idea
+/coverage
+/log
+/spec/tmp
+/tmp
+/vendor/bundle
+._*
+.gitconfig.local
 .DS_Store
-.idea
-.rvmrc
+Thumbs.db

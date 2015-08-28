@@ -11,17 +11,14 @@
 
 [core]
 	autocrlf = input
-	editor = mate -w
+	editor = subl -w
 
 #[diff]
 #	external = ~/bin/git-diff-wrapper.sh
 
-[github]
-	user = jgyllen
-
 [help]
 	browser = open
 	
-[user]
-	email = jacob@cookiejunkie.com
-	name = Jacob Gyllenstierna
+[include]
+	# For credentials, secrets, etc.
+	path = ~/.gitconfig.local
